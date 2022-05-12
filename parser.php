@@ -7,7 +7,7 @@ $validate = array("string, required", "string, required", "string", "string", "s
 $check = [];
 $newString = "";
 $finalString = [];
-if (($handle = fopen("products_comma_separated.csv", "r")) !== FALSE) {     
+if (($handle = fopen("parse.csv", "r")) !== FALSE) {     
     if (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
         $num = count($data);
         $my_array = $data;

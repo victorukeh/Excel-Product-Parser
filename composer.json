@@ -1,0 +1,16 @@
+{
+    "autoload": {
+        "psr-4": { "MyLibrary\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "MyLibrary\\Tests\\": "tests/" }
+    },
+    "scripts": {
+        "test": [
+            "phpunit tests/DataTest.php"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9"
+    }
+}

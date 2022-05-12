@@ -10,7 +10,7 @@ class DataTest extends PHPUnit\Framework\TestCase
     /** @test @return array */
     public function provider()
     {
-        $file = file_get_contents("work.csv");
+        $file = file_get_contents("parse.csv");
         foreach (explode("\n", $file, -1) as $line) {
             $data[] = explode(',', $line);
         }
